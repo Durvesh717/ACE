@@ -1,0 +1,10 @@
+# Runtime dependencies for run.py. Nothing else is needed — the model weights
+# ship in models/ and no file is downloaded at run time.
+#
+# Verified on: Python 3.12.13, CUDA 13.0, NVIDIA driver 610.57, RTX 3050 Laptop.
+# Lower bounds are given so an existing CUDA-matched PyTorch is not disturbed;
+# the exact versions this was tested with are noted alongside.
+
+torch>=2.0          # tested with 2.13.0+cu130
+numpy>=1.24         # tested with 2.5.2
+einops>=0.6         # tested with 0.8.2  (required by the Restormer architecture)
